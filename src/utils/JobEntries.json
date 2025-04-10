@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Defense Contracter",
+        "company": "Northrop Grumman",
+        "desciription": "Write and maintain the BSP, which is the software layer that allows VxWorks to interact with the specific Xilinx hardware (e.g., Zynq, Zynq UltraScale+). This includes writing drivers for the hardware peripherals (e.g., UART, SPI, I2C) and ensuring that the BSP is optimized for performance and reliability. The BSP must also be compatible with the VxWorks operating system and the Xilinx hardware platform.", 
+        "link": "https://jobs.northropgrumman.com/careers?location=United%20States%20of%20America&pid=1340057861550&domain=ngc.com&sort_by=relevance"
+
+    },
+    {
+        "id": 2,
+        "title": "Lead Software Engineer",
+        "company": "USAA",
+        "desciription": "Design, develop, code, and test complex tactical as well as strategic multi-functional technical solutions, often collaborating with Engineers or Architects outside of team/department. " ,
+        "link": "https://www.usaajobs.com/job/san-antonio/lead-software-engineer-full-stack/1207/79650531568"
+    },
+    {
+        "id": 3,
+        "title": "Platform Engineer -SQL Server",
+        "company": "Costco",
+        "desciription": "Platform Engineers translate high level platform design into low level technical design and are responsible for implementing, administering, supporting, and patching their corresponding platforms. Platform Engineers work closely with Solution Architects to enable the capabilities defined on roadmaps and blueprints supporting platform programs and initiatives. Platform Engineers are well versed in modern data, infrastructure and integration platforms, industry/technology best practices, and actively work on improving the reliability and scalability of infrastructure." ,
+        "link": "https://phf.tbe.taleo.net/phf02/ats/careers/v2/viewRequisition?org=COSTCO&cws=41&rid=9121"
+    },
+    {
+        "id": 4,
+        "title": "Application Developer",
+        "company": "Delicato Family Wines",
+        "desciription": "Designs, tests, implements, and maintains complex programs and reports by utilizing business requirements through specifications from IS Business Relationship Managers (BRMs) and various Business Process Owners (BPOs)." ,
+        "link": "https://careers.delicato.com/job/Manteca-Application-Developer-CA-95336/1268443400/?feedId=241200&utm_source=Indeed&utm_campaign=Delicato_Indeed&jobPipeline=Indeed"
+    },
+    {
+        "id": 5,
+        "title": "Principal Software Engineer",
+        "company": "Microsoft",
+        "desciription": "Partners with appropriate stakeholders (e.g., project manager, technical lead) to determine user requirements for a set of scenarios. Leverages a variety of feedback channels to incorporate insights into future designs or solution fixes. Leads incorporation of appropriate continuous feedback loops measuring customer value, usage patterns, and other actionable metrics of value. Begins to determine additional critical metrics." ,
+        "link": "https://jobs.careers.microsoft.com/global/en/job/1806502/Principal-Software-Engineer"
+    }
+]
