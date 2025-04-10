@@ -11,7 +11,7 @@ const HomeComponent = ({ onJobSelect }: HomeComponentProps) => {
 
   return (
     <div className="min-h-screen">
-      <h1 className="text-3xl font-bold mb-8 text-center text-gray-800">Top Five Jobs I'm Interested In</h1>
+      <h1 className="text-3xl font-bold mb-8 text-center text-gray-800">Top Five Jobs Im Interested In</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {jobData.map((job) => (
           <div 

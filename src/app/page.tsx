@@ -1,49 +1,61 @@
-"use client";
+// "use client";
 
-import { useEffect, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
-import HomeComponent from "../components/HomeComponent";
-import JobDetail from "../components/JobDetail";
-import JobEntries from "../utils/JobEntries.json";
-import { IJobItems } from "../utils/interfaces";
+// import { useEffect, useState } from "react";
+// import { useRouter, useSearchParams } from "next/navigation";
+// import HomeComponent from "../components/HomeComponent";
+// import JobDetail from "../components/JobDetail";
+// import JobEntries from "../utils/JobEntries.json";
+// import { IJobItems } from "../utils/interfaces";
 
-export default function Home() {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const [selectedJob, setSelectedJob] = useState<IJobItems | null>(null);
+// export default function Home() {
+//   const router = useRouter();
+//   const searchParams = useSearchParams();
+//   const [selectedJob, setSelectedJob] = useState<IJobItems | null>(null);
   
-  useEffect(() => {
-    const jobId = searchParams.get('job');
-    if (jobId) {
-      const jobIdNumber = parseInt(jobId);
-      const foundJob = JobEntries.find(job => job.id === jobIdNumber);
-      if (foundJob) {
-        setSelectedJob(foundJob);
-      } else {
-        router.push('/');
-      }
-    } else {
-      setSelectedJob(null);
-    }
-  }, [searchParams, router]);
+//   useEffect(() => {
+//     const jobId = searchParams.get('job');
+//     if (jobId) {
+//       const jobIdNumber = parseInt(jobId);
+//       const foundJob = JobEntries.find(job => job.id === jobIdNumber);
+//       if (foundJob) {
+//         setSelectedJob(foundJob);
+//       } else {
+//         router.push('/');
+//       }
+//     } else {
+//       setSelectedJob(null);
+//     }
+//   }, [searchParams, router]);
 
-  const handleJobSelect = (job: IJobItems) => {
-    setSelectedJob(job);
-    router.push(`/?job=${job.id}`);
-  };
+//   const handleJobSelect = (job: IJobItems) => {
+//     setSelectedJob(job);
+//     router.push(`/?job=${job.id}`);
+//   };
 
-  const handleBackToList = () => {
-    setSelectedJob(null);
-    router.push('/');
-  };
+//   const handleBackToList = () => {
+//     setSelectedJob(null);
+//     router.push('/');
+//   };
 
+//   return (
+//     <div className="container mx-auto p-4">
+//       {!selectedJob ? (
+//         <HomeComponent onJobSelect={handleJobSelect} />
+//       ) : (
+//         <JobDetail job={selectedJob} onBack={handleBackToList} />
+//       )}
+//     </div>
+//   );
+// }
+
+
+import { Suspense } from "react";
+import JobPageClient from "../components/JobPageClient";
+
+export default function HomePage() {
   return (
-    <div className="container mx-auto p-4">
-      {!selectedJob ? (
-        <HomeComponent onJobSelect={handleJobSelect} />
-      ) : (
-        <JobDetail job={selectedJob} onBack={handleBackToList} />
-      )}
-    </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <JobPageClient />
+    </Suspense>
   );
 }

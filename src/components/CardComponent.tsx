@@ -1,7 +1,7 @@
 import { Button, Card } from "flowbite-react";
 import { IJobItems } from "../utils/interfaces";
 
-const CardComponent = ({ title, company, desciription, link }: IJobItems) => {
+const CardComponent = ({ title, company, desciription }: IJobItems) => {
   return (
     <Card className="max-w-sm h-full">
       <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
