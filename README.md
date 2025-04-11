@@ -21,8 +21,12 @@
 
 [Vercel](https://jobs-that-interest-you-beta.vercel.app/)
 
-## FeedBack/Peer Review: 
+## FeedBack/Peer Review
 
-**Reviewer:** (Name Here)
+**Reviewer:** Santiago Jesus Montanez
 
-**Comments:** (Comment Here)
+**Comments:**
+
+1. I would try making adding the job title in the card that displays after clicking on one of the cards.
+2. This is just being nit picky, but on the title of the home screen make sure to put "I'm" instead of "Im"
+3. I really like how you were able to navigate your site using <\Suspense><\/Suspense>. I will be saving your code and review the steps, so I can try doing it myself.
